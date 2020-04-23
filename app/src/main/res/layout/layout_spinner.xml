@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_2sdp"
+    android:padding="@dimen/_4sdp">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:drawSelectorOnTop="true"
+        android:padding="@dimen/_4sdp"
+        android:prompt="@string/select"
+        android:textSize="22sp"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        android:visibility="visible" />
+
+</LinearLayout>
