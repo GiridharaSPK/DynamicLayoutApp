@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         context = MainActivity.this;
 
         list = new ArrayList<>();
-        list.add(new CustomViewModel(1, "Button"));
-        list.add(new CustomViewModel(0, "Text2"));
         list.add(new CustomViewModel(0, "Text1"));
+        list.add(new CustomViewModel(0, "Text2"));
+        list.add(new CustomViewModel(1, "Button"));
 
         //setAdapter
         linearLayoutManager = new LinearLayoutManager(context);
