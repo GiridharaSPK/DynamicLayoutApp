@@ -11,7 +11,7 @@
         android:layout_margin="@dimen/_2sdp"
         android:gravity="center"
         android:padding="@dimen/_4sdp"
-        android:text="text"
+        android:text="unknown view"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 </LinearLayout>

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayoutManager linearLayoutManager;
     private Context context;
     private ArrayList<CustomViewModel> list;
+    private ArrayList<String> spinnerList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +27,15 @@ public class MainActivity extends AppCompatActivity {
         context = MainActivity.this;
 
         list = new ArrayList<>();
-        list.add(new CustomViewModel(0, "Text1"));
-        list.add(new CustomViewModel(0, "Text2"));
-        list.add(new CustomViewModel(1, "Button"));
+        list.add(new CustomViewModel(0, "Username", 16, ""));
+        list.add(new CustomViewModel(1, "", 16, "Enter username"));
+        list.add(new CustomViewModel(0, "Password", 16, ""));
+        list.add(new CustomViewModel(1, "", 16, "Enter password"));
+        list.add(new CustomViewModel(4, "Login", 16, ""));
+        spinnerList = new ArrayList<>();
+        spinnerList.add("one");
+        spinnerList.add("two");
+        list.add(new CustomViewModel(3, "Select", 16, "", spinnerList));
 
         //setAdapter
         linearLayoutManager = new LinearLayoutManager(context);
